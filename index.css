@@ -22,17 +22,20 @@
   
   li {
     padding: 10px;
-  }
-  
-  li, img {
     max-width: 500px;
   }
   
-  .container {
+ .container {
     max-width: 600px;
     margin: 0 auto;
   }
   
+  .user-photo img {
+     max-width: 200px;
+     max-height: 200px;
+     background-size: contain;
+  }
+
   .error-message {
       color: red;
   }

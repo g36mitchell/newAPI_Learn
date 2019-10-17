@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>New finder</title>
+    <title>Github Repo Finder</title>
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
-        <h1>News finder</h1>
+        <h1>Github Repository Search</h1>
 
         <form id="js-form">
-            <label for="search-term">Search term</label>
+            <label for="search-term">Enter handle</label>
             <input type="text" name="search-term" id="js-search-term" required>
 
-            <label for="max-results">Maximum results to return</label>
+ <!--           <label for="max-results">Maximum results to return</label>
             <input type="number" name="max-results" id="js-max-results" value="10">
-
-            <input type="submit" value="Go!">
+-->
+            <input type="submit" value="Search">
         </form>
 
         <p id="js-error-message" class="error-message"></p>
         <section id="results" class="hidden">
-          <h2>Search results</h2>
+          <h2>Search results (up to 10 most recent)</h2>
+          <div id="results-avatar" class="user-photo"></div>
           <ul id="results-list">
           </ul>
         </section>
